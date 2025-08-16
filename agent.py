@@ -4,7 +4,7 @@ from tools.wind_speed import WindSpeedTool
 
 # 初始化 DeepSeek LLM（请根据实际 API key 或参数配置）
 llm = ChatOpenAI(
-    openai_api_key="sk-266f3e18236f4c5499ccefb881bcba86",  # 替换为你的 DeepSeek API key
+    openai_api_key="",  # 替换为你的 DeepSeek API key
     openai_api_base="https://api.deepseek.com/v1",  # DeepSeek OpenAI兼容API地址
     model="deepseek-chat"
 )
