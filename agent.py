@@ -1,11 +1,19 @@
 from langchain.agents import initialize_agent, Tool
 from langchain_community.chat_models import ChatOpenAI
+import os
+from dotenv import load_dotenv
 from tools.wind_speed import WindSpeedTool
 
-# 初始化 DeepSeek LLM（请根据实际 API key 或参数配置）
+load_dotenv()
+api_key = os.getenv("DEEPSEEK_API_KEY")
 llm = ChatOpenAI(
+<<<<<<< HEAD
     openai_api_key="",  # 替换为你的 DeepSeek API key
     openai_api_base="https://api.deepseek.com/v1",  # DeepSeek OpenAI兼容API地址
+=======
+    openai_api_key=api_key,
+    openai_api_base="https://api.deepseek.com/v1",
+>>>>>>> f593865 (sql env)
     model="deepseek-chat"
 )
 
