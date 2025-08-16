@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# VSCode
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# 环境依赖
+.env
+*.env
+*.venv
+.venv/
+
+# 数据文件
+/data/
+
+# 依赖包
+*.whl
+*.tar.gz
+*.zip
+*.db
+
+# 不上传依赖
+requirements.txt
+Pipfile
+Pipfile.lock
+poetry.lock
+
+# OS
+.DS_Store
+Thumbs.db
